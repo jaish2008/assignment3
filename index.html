@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Slice | Pizza Service</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script>
+// Smooth scroll to sections
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Simple contact form message
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  document.getElementById('formMsg').textContent = "✅ Thank you! We'll get back to you soon.";
+  e.target.reset();
+});
+
+
+</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🍕 Golden Slice</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Menu</a>
+      <a href="#steps">How to Order</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="order-btn" onclick="scrollToSection('contact')">Order Now</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Fresh. Hot. Golden.</h1>
+      <p>Experience premium pizzas made with passion, baked to perfection, and delivered with love.</p>
+      <button onclick="scrollToSection('services')">Explore Menu</button>
+    </div>
+  </section>
+
+  <!-- Description / Why Us -->
+  <section class="why-us">
+    <div class="why-content">
+      <h2>Why Choose Golden Slice?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>🔥 Fresh Ingredients</h3>
+          <p>We use farm-fresh veggies and hand-tossed dough daily.</p>
+        </div>
+        <div class="why-card">
+          <h3>⚡ Fast Delivery</h3>
+          <p>Hot pizza at your door in under 30 minutes.</p>
+        </div>
+        <div class="why-card">
+          <h3>💛 Great Deals</h3>
+          <p>Save more with combo offers and daily discounts.</p>
+        </div>
+        <div class="why-card">
+          <h3>🍴 Variety</h3>
+          <p>Choose from over 20 pizzas with custom toppings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (Menu) -->
+  <section id="services" class="services">
+    <h2>Our Great Deals</h2>
+    <div class="menu-scroll">
+      <div class="menu-card">
+        <img src="margherita.png" alt="Margherita Pizza">
+        <h3>Margherita</h3>
+        <p>Classic cheese, tomato & basil</p>
+        <span>$9.99</span>
+      </div>
+      <div class="menu-card">
+        <img src="pepperoni.png" alt="Pepperoni Pizza">
+        <h3>Pepperoni</h3>
+        <p>Loaded with crispy pepperoni</p>
+        <span>$11.49</span>
+      </div>
+      <div class="menu-card">
+        <img src="veggoe supreme.png" alt="Veggie Pizza">
+        <h3>Veggie Supreme</h3>
+        <p>Fresh veggies with extra cheese</p>
+        <span>$10.99</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="BBQ Pizza">
+        <h3>BBQ Chicken</h3>
+        <p>Smoky BBQ sauce with chicken</p>
+        <span>$12.49</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ordering Steps -->
+  <section id="steps" class="steps">
+    <h2>How to Order</h2>
+    <div class="steps-container">
+      <div class="step">
+        <h3>1️⃣ Choose Your Pizza</h3>
+        <p>Pick from our menu or customize your own.</p>
+      </div>
+      <div class="step">
+        <h3>2️⃣ Place Your Order</h3>
+        <p>Quick and easy checkout experience.</p>
+      </div>
+      <div class="step">
+        <h3>3️⃣ Get It Delivered</h3>
+        <p>Our delivery heroes bring it hot and fresh!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section id="reviews" class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <p>"Best pizza I’ve ever had! Crispy crust and perfect cheese blend."</p>
+        <span>- Sarah J.</span>
+      </div>
+      <div class="review-card">
+        <p>"Fast delivery and absolutely delicious! Highly recommend."</p>
+        <span>- Mike D.</span>
+      </div>
+      <div class="review-card">
+        <p>"Golden Slice never disappoints. Great quality and taste!"</p>
+        <span>- Priya K.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <img src="about.png" alt="About Pizza Haven">
+      <div>
+        <h2>About Golden Slice</h2>
+        <p>At Golden Slice, we believe every slice tells a story. Our chefs craft pizzas using traditional recipes with a modern twist. Whether dine-in or delivery, we promise freshness, flavor, and satisfaction in every bite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Golden Slice | Designed with ❤️ and Cheese.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
