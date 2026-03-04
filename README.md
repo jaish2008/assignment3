@@ -14,16 +14,16 @@ Example: `https://jaish2008.github.io/golden-slice/`
 ## 📸 Screenshots
 
 ### 🏠 Hero Section
-![Hero Section](assets/screenshots/hero.png)
+![Hero Section](margherita.png)
 
 ### 🍕 Menu & Deals
-![Menu Section](assets/screenshots/menu.png)
+![Menu Section](pepperoni.png)
 
 ### ⭐ Customer Reviews
-![Reviews Section](assets/screenshots/reviews.png)
+![Reviews Section](about.png)
 
 ### 📞 Contact Section
-![Contact Section](assets/screenshots/contact.png)
+![Contact Section](veggoe supreme.png)
 
 ## ✨ Features
 
